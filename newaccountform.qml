@@ -4,7 +4,7 @@ import QtQuick.Controls
 
 GridLayout
 {
-    signal newAccountClicked()
+    signal backClicked()
 
     anchors.fill: parent
     columns: 3
@@ -83,7 +83,7 @@ GridLayout
 
     Button
     {
-        text: qsTr("Войти")
+        text: qsTr("Создать аккаунт")
         font.pointSize: 12
         Layout.preferredWidth: 300
         Layout.preferredHeight: 40
@@ -93,7 +93,7 @@ GridLayout
     {
         contentItem: Text
         {
-            text: qsTr("Новый аккаунт")
+            text: qsTr("Назад")
             horizontalAlignment: Text.AlignHCenter
             font.pointSize: 12
             font.underline: true
@@ -106,7 +106,7 @@ GridLayout
             anchors.fill: parent
             color: "transparent"
         }
-        onClicked: newAccountClicked()
+        onClicked: backClicked()
     }
 
     Item

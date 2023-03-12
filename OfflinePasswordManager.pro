@@ -5,7 +5,8 @@ SOURCES += \
 
 resources.files = \
                   main.qml \
-                  loginform.qml
+                  loginform.qml \
+                  newaccountform.qml
 
 resources.prefix = /$${TARGET}
 RESOURCES += resources
